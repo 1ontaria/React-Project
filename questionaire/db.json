@@ -1,0 +1,39 @@
+{
+  "questions": [
+    {
+      "id": "1",
+      "prompt": "What does JSON stand for?",
+      "answers": [
+        "JavaScript Object Null",
+        "JavaScript Other Numbers",
+        "JavaScript Object Notation",
+        "JavaScript Outside Numerator"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "2",
+      "prompt": "In JavaScript, an _____ is a collection ofkey-value pairs.",
+      "answers": ["Array", "Object", "Function", "API"],
+      "correctIndex": 2
+    },
+    {
+      "id": "3",
+      "prompt": "Which of the following is NOT a JavaScript datatype?",
+      "answers": ["Number", "Boolean", "Null", "Function"],
+      "correctIndex": 4
+    },
+    {
+      "id": "4",
+      "prompt": "The ___ array method allows you to iterate over an array and modify its elememts using a callback function",
+      "answers": [".map()", ".find()", ".filter()", ".find()"],
+      "correctIndex": 1
+    },
+    {
+      "id": "5",
+      "prompt": "In React, _______ let you split the UI into independent, reusable pieces, and think about each piece in isolation.",
+      "answers": ["Props", "Functions", "Components", "useState"],
+      "correctIndex": 3
+    }
+  ]
+}
