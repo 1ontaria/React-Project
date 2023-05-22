@@ -13,10 +13,15 @@ function Questions() {
   return (
     <div>
       <ul>
-        {questions.map((item) => (
-          <li key={item.id}>
-            <QuizItem item={item} />
-          </li>
+        {questions.map((question) => (
+          <QuizItem
+            key={question.id}
+            question={question}
+            prompt={question.prompt}
+            id={question.id}
+            answers={question.answers}
+            correctAnswer={question.correctAnswer}
+          />
         ))}
       </ul>
     </div>
