@@ -14,26 +14,79 @@
     {
       "id": "2",
       "prompt": "In JavaScript,  _____ are a collection of key-value pairs.",
-      "answers": ["Arrays", "Objects", "Functions", "APIs"],
+      "answers": [
+        "Arrays",
+        "Objects",
+        "Functions",
+        "APIs"
+      ],
       "correctAnswer": "Objects"
     },
     {
       "id": "3",
       "prompt": "Which of the following is NOT a JavaScript datatype?",
-      "answers": ["Number", "Boolean", "Null", "Function"],
+      "answers": [
+        "Number",
+        "Boolean",
+        "Null",
+        "Function"
+      ],
       "correctAnswer": "Function"
     },
     {
       "id": "4",
       "prompt": "The ___ array method allows you to iterate over an array and modify its elememts using a callback function",
-      "answers": [".map()", ".find()", ".filter()", ".find()"],
+      "answers": [
+        ".map()",
+        ".find()",
+        ".filter()",
+        ".find()"
+      ],
       "correctAnswer": ".map()"
     },
     {
       "id": "5",
       "prompt": "In React, _______ let you split the UI into independent, reusable pieces, and think about each piece in isolation.",
-      "answers": ["Props", "Functions", "Components", "useState"],
+      "answers": [
+        "Props",
+        "Functions",
+        "Components",
+        "useState"
+      ],
       "correctAnswer": "Components"
+    },
+    {
+      "prompt": "React components use _____ to communicate with each other",
+      "answers": [
+        "functions",
+        "props",
+        "useEffect",
+        "BrowserRouter"
+      ],
+      "correctAnswer": "",
+      "id": "4u-Cc17"
+    },
+    {
+      "id": "vKFADMM",
+      "prompt": "React components use _____ to communicate with each other",
+      "answers": [
+        "functions",
+        "props",
+        "useEffect",
+        "BrowserRouter"
+      ],
+      "correctAnswer": ""
+    },
+    {
+      "id": "2a0NYGE",
+      "prompt": "",
+      "answers": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": ""
     }
   ]
 }
