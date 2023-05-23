@@ -2,25 +2,26 @@ import React, { useState } from "react";
 
 function NewQuestion({ addQuestion }) {
   const [data, setData] = useState({
+    id: 0,
     prompt: "",
     answer1: "",
     answer2: "",
     answer3: "",
     answer4: "",
-    correctIndex: 0,
     correctAnswer: "",
   });
 
   function handleChange(e) {
-    console.log({ ...data, [e.target.name]: e.target.value });
+    setData({ ...data, [e.target.name]: e.target.value });
   }
 
+  console.log(data);
   function handleSubmit(e) {
     e.preventDefault();
     const newData = {
+      id: data.id,
       prompt: data.prompt,
       answers: [data.answer1, data.answer2, data.answer3, data.answer4],
-      correctIndex: data.correctIndex,
       correctAnswer: data.correctAnswer,
     };
     fetch("http://localhost:3000/questions", {
@@ -31,7 +32,7 @@ function NewQuestion({ addQuestion }) {
       body: JSON.stringify(newData),
     })
       .then((r) => r.json())
-      .then((newItem) => addQuestion(newItem));
+      .then((newPrompt) => addQuestion(newPrompt));
   }
 
   return (
@@ -86,14 +87,14 @@ function NewQuestion({ addQuestion }) {
         <label>
           Correct Answer:
           <select
-            name="correctIndex"
-            value={data.correctIndex}
+            name="correctAnswer"
+            value={data.correctAnswer}
             onChange={handleChange}
           >
-            <option value="0">{data.answer1}</option>
-            <option value="1">{data.answer2}</option>
-            <option value="2">{data.answer3}</option>
-            <option value="3">{data.answer4}</option>
+            <option>{data.answer1}</option>
+            <option>{data.answer2}</option>
+            <option>{data.answer3}</option>
+            <option>{data.answer4}</option>
           </select>
         </label>
         <button type="submit">Add Question</button>
