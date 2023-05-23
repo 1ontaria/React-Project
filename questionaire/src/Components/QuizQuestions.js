@@ -9,6 +9,7 @@ function Questions({ questions }) {
       prompt={question.prompt}
       id={question.id}
       answers={question.answers}
+      correctIndex={question.correctIndex}
       correctAnswer={question.correctAnswer}
     />
   ));

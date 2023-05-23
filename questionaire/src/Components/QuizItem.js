@@ -1,6 +1,13 @@
 import React from "react";
 
-function QuizItem({ question, prompt, id, answers, correctAnswer }) {
+function QuizItem({
+  question,
+  prompt,
+  id,
+  answers,
+  correctIndex,
+  correctAnswer,
+}) {
   function handleChange(e) {
     if (e.target.value === correctAnswer) {
       alert("You Got It!");

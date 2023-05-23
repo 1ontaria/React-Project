@@ -24,7 +24,7 @@ function App() {
   }
 
   return (
-    <main>
+    <div className={"App" + (darkMode ? "light" : "dark")}>
       <button onClick={handleClick}>{darkMode ? "Dark" : "Light"}</button>
       <Header />
       <Route exact path="/">
@@ -36,7 +36,7 @@ function App() {
       <Route path="/new-question">
         <NewQuestion addQuestion={addQuestion} />
       </Route>
-    </main>
+    </div>
   );
 }
 
