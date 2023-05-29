@@ -34,6 +34,18 @@
       "prompt": "In React, _______ let you split the UI into independent, reusable pieces, and think about each piece in isolation.",
       "answers": ["Props", "Functions", "Components", "useState"],
       "correctAnswer": "Components"
+    },
+    {
+      "id": 6,
+      "prompt": "React components use _____ to communicate with each other",
+      "answers": ["functions", "props", "useEffect", "BrowserRouter"],
+      "correctAnswer": "props"
+    },
+    {
+      "id": 7,
+      "prompt": "What's my name?",
+      "answers": ["Jarius", "Ontaria", "Antwan", "Stacy"],
+      "correctAnswer": "Ontaria"
     }
   ]
 }

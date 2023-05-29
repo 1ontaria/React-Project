@@ -1,19 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import QuizItem from "./QuizItem";
 
-function Questions({ questions }) {
+function Questions() {
+  const [question, setQuestion] = useState([]);
+  useEffect(() => {
+    fetch("http://localhost:3000/questions")
+      .then((resp) => resp.json())
+      .then((data) => setQuestion(data));
+  }, []);
+  console.log(question);
+
   return (
     <div>
-      <ul>
-        {questions.map((question) => (
+      <ul className="listedQuestions">
+        {question.map((item) => (
           <QuizItem
-            key={question.id}
-            question={question}
-            prompt={question.prompt}
-            id={question.id}
-            answers={question.answers}
-            correctIndex={question.correctIndex}
-            correctAnswer={question.correctAnswer}
+            key={item.id}
+            prompt={item.prompt}
+            answers={item.answers}
+            id={item.id}
           />
         ))}
       </ul>

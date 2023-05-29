@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import QuizQuestions from "./QuizQuestions";
 import { Route } from "react-router-dom";
 import Header from "./Header";
@@ -13,19 +13,13 @@ function App() {
     setDarkMode((darkMode) => !darkMode);
   }
 
-  useEffect(() => {
-    fetch("  http://localhost:3000/questions")
-      .then((resp) => resp.json())
-      .then((questions) => setQuestions(questions));
-  }, []);
-
   function addQuestion(newPrompt) {
     setQuestions({ ...questions, newPrompt });
   }
 
   return (
     <div className={"App" + (darkMode ? "light" : "dark")}>
-      <button onClick={handleClick}>{darkMode ? "Dark" : "Light"}</button>
+      <button>{darkMode ? "Dark" : "Light"}</button>
       <Header />
       <Route exact path="/">
         <Home />

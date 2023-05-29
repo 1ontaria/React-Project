@@ -1,12 +1,12 @@
 import React from "react";
 
 function QuizItem({
-  question,
   prompt,
   id,
   answers,
-  correctIndex,
   correctAnswer,
+  deleteQuestion,
+  onClick,
 }) {
   function handleChange(e) {
     if (e.target.value === correctAnswer) {
@@ -18,7 +18,7 @@ function QuizItem({
 
   return (
     <div>
-      <li>
+      <li className="question">
         <h4> Question {id}</h4>
         <h5>{prompt}</h5>
         <label>
@@ -30,7 +30,7 @@ function QuizItem({
             ))}
           </select>
         </label>
-        <button> Nailed it! </button>
+        <button onClick={onClick}> Nailed it! </button>
       </li>
     </div>
   );

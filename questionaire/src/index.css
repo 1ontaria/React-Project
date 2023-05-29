@@ -1,9 +1,31 @@
-.app.dark {
-  background-color: black;
-  color: white;
+body {
+  font-family: "Patrick Hand", cursive;
 }
 
-.app.light {
-  background-color: white;
-  color: black;
+.question {
+  font-size: 35px;
+  background-color: antiquewhite;
+  border: 3px solid pink;
+  border-left-style: inset;
+  border-left-width: 5px;
+  margin-bottom: 10px;
+  width: 500px;
+  border-radius: 5%;
+  padding: 10px;
+}
+
+.listedQuestions {
+  text-decoration: none;
+}
+
+select {
+  margin: 10px;
+  padding: 5px;
+  font-size: 15px;
+}
+
+h1 {
+  padding-left: 100px;
+  padding-top: 50px;
+  margin: 0px;
 }
