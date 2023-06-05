@@ -67,7 +67,14 @@ input[type="text"] {
 }
 
 form {
-  margin-left: 250px;
+  margin-left: 50px;
   font-size: 25px;
   text-align: center;
+}
+
+button {
+  font-family: "Patrick Hand", cursive;
+  padding: 5px;
+  font-size: 15px;
+  background-color: #ffe5d9;
 }
