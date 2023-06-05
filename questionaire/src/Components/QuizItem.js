@@ -6,7 +6,6 @@ function QuizItem({ prompt, id, answers, correctAnswer }) {
   ));
 
   function handleChange(e) {
-    e.preventDefault();
     if (e.target.value === correctAnswer) {
       alert("That's right!");
     } else {
