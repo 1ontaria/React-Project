@@ -96,10 +96,11 @@ function NewQuestion({ addQuestion }) {
             value={data.correctAnswer}
             onChange={handleChange}
           >
-            <option>{data.answer1}</option>
-            <option>{data.answer2}</option>
-            <option>{data.answer3}</option>
-            <option>{data.answer4}</option>
+            <option></option>
+            <option value={data.answer1}>{data.answer1}</option>
+            <option value={data.answer2}>{data.answer2}</option>
+            <option value={data.answer3}>{data.answer3}</option>
+            <option value={data.answer4}>{data.answer4}</option>
           </select>
         </label>
         <button type="submit">Add Question</button>
