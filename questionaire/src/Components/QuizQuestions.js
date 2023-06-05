@@ -19,6 +19,7 @@ function Questions() {
             prompt={item.prompt}
             answers={item.answers}
             id={item.id}
+            correctAnswer={item.correctAnswer}
           />
         ))}
       </ul>

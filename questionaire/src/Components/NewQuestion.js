@@ -47,6 +47,7 @@ function NewQuestion({ addQuestion }) {
             value={data.prompt}
             onChange={handleChange}
           />
+          <br />
         </label>
         <label>
           Answer 1:
@@ -56,6 +57,7 @@ function NewQuestion({ addQuestion }) {
             value={data.answer1}
             onChange={handleChange}
           />
+          <br />
         </label>
         <label>
           Answer 2:
@@ -65,6 +67,7 @@ function NewQuestion({ addQuestion }) {
             value={data.answer2}
             onChange={handleChange}
           />
+          <br />
         </label>
         <label>
           Answer 3:
@@ -74,6 +77,7 @@ function NewQuestion({ addQuestion }) {
             value={data.answer3}
             onChange={handleChange}
           />
+          <br />
         </label>
         <label>
           Answer 4:
@@ -83,6 +87,7 @@ function NewQuestion({ addQuestion }) {
             value={data.answer4}
             onChange={handleChange}
           />
+          <br />
         </label>
         <label>
           Correct Answer:

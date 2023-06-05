@@ -40,12 +40,6 @@
       "prompt": "React components use _____ to communicate with each other",
       "answers": ["functions", "props", "useEffect", "BrowserRouter"],
       "correctAnswer": "props"
-    },
-    {
-      "id": 7,
-      "prompt": "What's my name?",
-      "answers": ["Jarius", "Ontaria", "Antwan", "Stacy"],
-      "correctAnswer": "Ontaria"
     }
   ]
 }

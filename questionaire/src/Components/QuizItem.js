@@ -1,23 +1,19 @@
 import React from "react";
 
-function QuizItem({
-  prompt,
-  id,
-  answers,
-  correctAnswer,
-  deleteQuestion,
-  onClick,
-}) {
+function QuizItem({ prompt, id, answers, correctAnswer }) {
+  const a = answers.map((answer, index) => (
+    <option key={index}>{answer}</option>
+  ));
+
   function handleChange(e) {
-    if (e.target.value === correctAnswer) {
-      alert("You Got It!");
-    } else {
-      alert("Try Again!");
+    e.preventDefault();
+    if (a === correctAnswer) {
+      console.log(a);
     }
   }
 
   return (
-    <div>
+    <div className="listedQuestions">
       <li className="question">
         <h4> Question {id}</h4>
         <h5>{prompt}</h5>
@@ -25,12 +21,10 @@ function QuizItem({
           Correct Answer:
           <select onChange={handleChange}>
             <option></option>
-            {answers.map((answer, index) => (
-              <option key={index}>{answer}</option>
-            ))}
+            {a}
           </select>
         </label>
-        <button onClick={onClick}> Nailed it! </button>
+        <button>Nailed it! </button>
       </li>
     </div>
   );
