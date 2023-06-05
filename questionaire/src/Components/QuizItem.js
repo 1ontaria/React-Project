@@ -7,8 +7,11 @@ function QuizItem({ prompt, id, answers, correctAnswer }) {
 
   function handleChange(e) {
     e.preventDefault();
-    if (a === correctAnswer) {
-      console.log(a);
+    if (e.target.value === correctAnswer) {
+      alert("That's right!");
+    } else {
+      alert("Try Again!");
+      e.target.value = "";
     }
   }
 

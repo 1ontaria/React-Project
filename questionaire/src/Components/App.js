@@ -9,17 +9,12 @@ function App() {
   const [darkMode, setDarkMode] = useState("false");
   const [questions, setQuestions] = useState([]);
 
-  function handleClick() {
-    setDarkMode((darkMode) => !darkMode);
-  }
-
   function addQuestion(newPrompt) {
     setQuestions({ ...questions, newPrompt });
   }
 
   return (
-    <div className={"App" + (darkMode ? "light" : "dark")}>
-      <button>{darkMode ? "Dark" : "Light"}</button>
+    <div>
       <Header />
       <Route exact path="/">
         <Home />
