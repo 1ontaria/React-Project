@@ -76,6 +76,17 @@
         ".forEach()"
       ],
       "correctAnswer": ".filter()"
+    },
+    {
+      "id": 8,
+      "prompt": "The ____ method creates a new array filled with elements that pass a test provided by a function.",
+      "answers": [
+        ".find()",
+        ".map()",
+        ".filter()",
+        ".forEach()"
+      ],
+      "correctAnswer": ".filter()"
     }
   ]
 }

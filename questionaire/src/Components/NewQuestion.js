@@ -18,23 +18,26 @@ function NewQuestion({ addQuestion }) {
   console.log(data);
   function handleSubmit(e) {
     e.preventDefault();
-    const newData = {
-      id: data.id,
-      prompt: data.prompt,
-      answers: [data.answer1, data.answer2, data.answer3, data.answer4],
-      correctAnswer: data.correctAnswer,
-    };
-    fetch("http://localhost:3000/questions", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(newData),
-    })
-      .then((r) => r.json())
-      .then((newPrompt) => addQuestion(newPrompt));
+    if (data.correctAnswer === "") {
+      alert("You must select an answer");
+    } else {
+      const newData = {
+        id: data.id,
+        prompt: data.prompt,
+        answers: [data.answer1, data.answer2, data.answer3, data.answer4],
+        correctAnswer: data.correctAnswer,
+      };
+      fetch("http://localhost:3000/questions", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(newData),
+      })
+        .then((r) => r.json())
+        .then((newPrompt) => addQuestion(newPrompt));
+    }
   }
-
   return (
     <section>
       <h1>New Question</h1>
