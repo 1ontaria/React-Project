@@ -79,14 +79,14 @@
     },
     {
       "id": 8,
-      "prompt": "The ____ method creates a new array filled with elements that pass a test provided by a function.",
+      "prompt": "React components use _____ to communicate with each other",
       "answers": [
-        ".find()",
-        ".map()",
-        ".filter()",
-        ".forEach()"
+        "functions",
+        "props",
+        "useEffect",
+        "BrowserRouter"
       ],
-      "correctAnswer": ".filter()"
+      "correctAnswer": "props"
     }
   ]
 }
