@@ -14,11 +14,9 @@ function QuizItem({ prompt, id, answers, correctAnswer }) {
   function handleChange(e) {
     if (e.target.value === correctAnswer) {
       alert("That's right!");
-      setButton(true);
     } else {
       alert("Try Again!");
       e.target.value = "";
-      setButton(false);
     }
   }
 
@@ -36,7 +34,7 @@ function QuizItem({ prompt, id, answers, correctAnswer }) {
         </label>
         <button onClick={buttonSwitch}>
           {" "}
-          {button ? "I don't know?" : "Nailed it!"}
+          {button ? "Taking a guess..." : "Nailed it!"}
         </button>
       </li>
     </div>

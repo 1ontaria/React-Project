@@ -6,7 +6,6 @@ import NewQuestion from "./NewQuestion";
 import Home from "./Home";
 
 function App() {
-  const [darkMode, setDarkMode] = useState("false");
   const [questions, setQuestions] = useState([]);
 
   function addQuestion(newPrompt) {

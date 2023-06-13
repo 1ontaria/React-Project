@@ -36,6 +36,7 @@ function NewQuestion({ addQuestion }) {
       })
         .then((r) => r.json())
         .then((newPrompt) => addQuestion(newPrompt));
+      setData("");
     }
   }
   return (

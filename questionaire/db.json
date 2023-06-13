@@ -79,14 +79,25 @@
     },
     {
       "id": 8,
-      "prompt": "React components use _____ to communicate with each other",
+      "prompt": "This react hook allows you to control a component's functionality and returns an array with two values",
       "answers": [
-        "functions",
-        "props",
         "useEffect",
-        "BrowserRouter"
+        "useReact",
+        "useContext",
+        "useState"
       ],
-      "correctAnswer": "props"
+      "correctAnswer": "useState"
+    },
+    {
+      "id": 9,
+      "prompt": "Which react hook allows you to give function to a component, and takes an array with two values?",
+      "answers": [
+        "useEffect",
+        "useReact",
+        "useContext",
+        "useState"
+      ],
+      "correctAnswer": "useState"
     }
   ]
 }
